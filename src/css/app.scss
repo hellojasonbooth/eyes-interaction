@@ -1,0 +1,130 @@
+@import "reset";
+
+
+body {
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.5;
+	
+	background-color: #ffcece;
+	color: #333333;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  height: 100%;
+	align-items: center;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+section.eye-section {
+  	background-color: #F44D19;
+}
+
+.lid {
+  background-color: rgba(229, 102, 102, 1);
+	position: absolute;
+  height: 150px;
+  width: 200px;
+  border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	margin-top: -100px;
+}
+
+
+.eye {
+  will-change: transform;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+	overflow: hidden;
+	transition: all .3s cubic-bezier(0.24, 0.98, 0.44, 1);
+}
+
+.eye1 {
+  margin-right: 20px;
+}
+
+.pupil,
+.pupil2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+ 	will-change: transform;
+}
+
+.pupil3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: 200%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+ 	will-change: transform;
+}
+
+.pupil4 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: -100%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+ 	will-change: transform;
+}
+
+.pupil5 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: 50%;
+  top: -100%;
+  margin-left: -40px;
+  margin-top: -40px;
+ 	will-change: transform;
+}
+
+.pupil6 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: 50%;
+  top: 200%;
+  margin-left: -40px;
+  margin-top: -40px;
+ 	will-change: transform;
+}
+
+
+img.mouth {
+  position: absolute;
+  top: calc(50% + 80px);
+	transition: all .5s cubic-bezier(0.24, 0.98, 0.44, 1);
+ 	will-change: transform;
+}
